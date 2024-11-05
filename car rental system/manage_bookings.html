@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managing Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header align="center">
+        <h1>Managing Booking</h1>
+    </header>
+    <section align="center">
+        <form id="rentalForm">
+            <label for="location">Select Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location" required><br><br>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="start-time">Start Time:</label>
+            <input type="time" id="start-time" name="start-time" required><br><br>
+
+            <label for="end-time">End Time:</label>
+            <input type="time" id="end-time" name="end-time" required><br><br>
+            <label for="select car">Select Car:</label>
+            <select id="select car"><br><br>
+            <option value="None">None</option>
+            <option value="Nano">Nano</option>
+            <option value="Audi">Audi</option>
+            <option value="Maruthi">Maruti</option>
+            <option value="Kia">Kia</option>
+            <option value="Range rover">Range rover</option>
+            <option value="Kia">Kia</option>
+            <option value="hyndai">hyndai</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Skoda">Skoda</option>
+            <option value="Mahindra">Mahindra</option>
+            <option value="Tayota">Tayota</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Telsa">Telsa</option>
+            </select>
+            <button type="submit">Continue to Payment</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('rentalForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = "payment.html"; 
+        });
+    </script>
+</body>
+</html>
